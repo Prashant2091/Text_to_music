@@ -86,7 +86,7 @@ def main():
         music_tensors = generate_music_tensors(text_area, time_slider)
         print("Musci Tensors: ", music_tensors)
         save_music_file = save_audio(music_tensors)
-        audio_filepath = 'audio_output/audio_0.wav'
+        audio_filepath = 'audio_0.wav'
         audio_file = open(audio_filepath, 'rb')
         audio_bytes = audio_file.read()
         st.audio(audio_bytes)
